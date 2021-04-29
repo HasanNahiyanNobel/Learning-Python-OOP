@@ -15,5 +15,5 @@ Learning from [this](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKh
 
 ## 2. Class Variables
 1. Added a class variable and used it in a function of class, only to know that things *doesn't* work like this.
-1. Used `self` to access a class variable.
+1. Used `self` to access a ~~class~~ instance variable.
 1. Used class name instead of `self` to use a variable like static, as per my understanding.
