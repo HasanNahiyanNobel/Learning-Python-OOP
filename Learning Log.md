@@ -10,3 +10,8 @@ Learning from [this](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKh
 1. Added `__init__` method to class.
 1. Added a method to class. Got a basic understanding of how `self` works.
 1. Had a *gooder* understanding of how `self` is actually passed.
+
+
+
+## 2. Class Variables
+1. Added a class variable and used it in a function of class, only to know that things *doesn't* work like this.
