@@ -8,3 +8,4 @@ Learning from [this](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKh
 1. Created a class with `pass`.
 1. Created instances of that class and manually added something which I believe should be called class variables.
 1. Added `__init__` method to class.
+1. Added a method to class. Got a basic understanding of how `self` works.
