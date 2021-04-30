@@ -44,4 +44,4 @@ Learning from [this](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKh
 ## 5. Special (Magic/Dunder) Methods
 1. `__repr__` is used for logging and debugging stuffs. `__str__` is sort of self-descriptive—like `toString()` method in Java.
 1. Learnt a use-case for `__repr__`, but still couldn't quite understand the difference from `__str__`.
-1. 
+1. Used `__str__`. Learnt that in the context of `print()` function, `__str__` is given preference over `__repr__`, and still both can be access but calling them explicitly.

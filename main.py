@@ -17,8 +17,8 @@ class Employee:
 	def __repr__(self):
 		return "Employee('{}', '{}', '{}')".format(self.first, self.last, self.pay)
 
-	# def __str__(self):
-	# 	pass
+	def __str__(self):
+		return '{} - {}'.format(self.fullname(), self.email)
 
 	def fullname(self):
 		return '{} {}'.format(self.first, self.last)
@@ -76,3 +76,6 @@ emp_1 = Employee('John', 'Lennon', 50000)
 emp_2 = Employee('Salil', 'Chowdhury', 60000)
 
 print(emp_1)
+
+print(repr(emp_1))
+print(str(emp_1))
