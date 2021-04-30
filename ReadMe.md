@@ -22,7 +22,7 @@ Learning from [this](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKh
 
 ## 3. Class Methods and Static Methods
 1. Regular methods of a class automatically takes the instance as the first argument (which we conventionally call `self`).
-1. To create a class method we need the `@classmethod` *decorator* just before the method. This method will take the class as its first argument. However, convention to write this is `cls`, not `class`—as the second one is already a keyword in python.
+1. To create a class method we need the `@classmethod` *decorator* just before the method. This method will take the class as its first argument. However, convention to write this is `cls`, not `class`—as the second one is already a keyword in Python.
 1. Used class method as a setter.
 1. Used class method as alternative constructor.
 1. Schafer clears the mist:
@@ -38,3 +38,10 @@ Learning from [this](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKh
 1. Learnt how class variable having same name is looked up from the inherited class.
 1. Created a new subclass `Manager`.
 1. Learnt the use of `isinstance` and `issubclass`.
+
+
+
+## 5. Special (Magic/Dunder) Methods
+1. `__repr__` is used for logging and debugging stuffs. `__str__` is sort of self-descriptive—like `toString()` method in Java.
+1. Learnt a use-case for `__repr__`, but still couldn't quite understand the difference from `__str__`.
+1. 

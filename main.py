@@ -14,6 +14,12 @@ class Employee:
 
 		Employee.num_of_employees += 1
 
+	def __repr__(self):
+		return "Employee('{}', '{}', '{}')".format(self.first, self.last, self.pay)
+
+	# def __str__(self):
+	# 	pass
+
 	def fullname(self):
 		return '{} {}'.format(self.first, self.last)
 
@@ -66,17 +72,7 @@ class Manager(Employee):
 			print('⇾', employee.fullname())
 
 
-dev_1 = Developer('John', 'Lennon', 50000, 'Python')
-dev_2 = Developer('Salil', 'Chowdhury', 60000, 'Java')
+emp_1 = Employee('John', 'Lennon', 50000)
+emp_2 = Employee('Salil', 'Chowdhury', 60000)
 
-mgr_1 = Manager('Satyajit', 'Ray', 90000, [dev_1])
-
-print(isinstance(mgr_1, Employee))
-print(isinstance(mgr_1, Developer))
-print(isinstance(mgr_1, Manager))
-
-print()
-
-print(issubclass(Developer, Employee))
-print(issubclass(Manager, Employee))
-print(issubclass(Developer, Manager))
+print(emp_1)
