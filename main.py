@@ -28,6 +28,9 @@ class Employee:
 		"""
 		return self.pay + other.pay
 
+	def __len__(self):
+		return len(self.fullname())
+
 	def fullname(self):
 		return '{} {}'.format(self.first, self.last)
 
@@ -83,4 +86,4 @@ class Manager(Employee):
 emp_1 = Employee('John', 'Lennon', 50000)
 emp_2 = Employee('Salil', 'Chowdhury', 60000)
 
-print(emp_1 + emp_2)
+print(len(emp_1))

@@ -46,3 +46,4 @@ Learning from [this](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKh
 1. Learnt a use-case for `__repr__`, but still couldn't quite understand the difference from `__str__`.
 1. Used `__str__`. Learnt that in the context of `print()` function, `__str__` is given preference over `__repr__`, and still both can be access but calling them explicitly.
 1. Used `__add__` method.
+1. Used `__len__` method.
