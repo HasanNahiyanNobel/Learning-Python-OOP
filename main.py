@@ -37,10 +37,14 @@ class Employee:
 		return True
 
 
-emp_1 = Employee('Hasan', 'Nahiyan', 50000)
-emp_2 = Employee('Test', 'User', 60000)
+class Developer(Employee):
+	pass
 
-import datetime
-my_date = datetime.date(2021, 4, 30)
 
-print(Employee.is_workday(my_date))
+dev_1 = Developer('John', 'Lennon', 50000)
+dev_2 = Developer('Salil', 'Chowdhury', 60000)
+
+print(help(Developer))
+
+# print(dev_1.email)
+# print(dev_2.email)

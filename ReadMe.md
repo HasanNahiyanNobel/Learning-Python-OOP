@@ -29,3 +29,9 @@ Learning from [this](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKh
 	- If a method uses `self` somewhere inside—it should be **regular method**.
 	- If it uses `cls` inside—should be a **class method**.
 	- If it uses neither of them—should be a **static method**.
+	
+
+
+## 4. Inheritance
+1. Created an inherited class using `pass`.
+1. Used `help` method to have a good overview of the inherited class. This method looks *really* helpful. :3
