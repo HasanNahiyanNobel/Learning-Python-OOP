@@ -24,3 +24,4 @@ Learning from [this](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKh
 1. Regular methods of a class automatically takes the instance as the first argument (which we conventionally call `self`).
 1. To create a class method we need the `@classmethod` *decorator* just before the method. This method will take the class as its first argument. However, convention to write this is `cls`, not `class`—as the second one is already a keyword in python.
 1. Used class method as a setter.
+1. Used class method as alternative constructor.
