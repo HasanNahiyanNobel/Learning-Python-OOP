@@ -47,3 +47,8 @@ Learning from [this](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKh
 1. Used `__str__`. Learnt that in the context of `print()` function, `__str__` is given preference over `__repr__`, and still both can be access but calling them explicitly.
 1. Used `__add__` method.
 1. Used `__len__` method.
+
+
+
+## 6. Property Decorators: Getters, Setters and Deleters
+1. Learnt the use of `@property` decorator.
