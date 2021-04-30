@@ -17,3 +17,10 @@ Learning from [this](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKh
 1. Added a class variable and used it in a function of class, only to know that things *doesn't* work like this.
 1. Used `self` to access a ~~class~~ instance variable.
 1. Used class name instead of `self` to use a variable like static, as per my understanding.
+
+
+
+## 3. Class Methods and Static Methods
+1. Regular methods of a class automatically takes the instance as the first argument (which we conventionally call `self`).
+1. To create a class method we need the `@classmethod` *decorator* just before the method. This method will take the class as its first argument. However, convention to write this is `cls`, not `class`—as the second one is already a keyword in python.
+1. Used class method as a setter.
