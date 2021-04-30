@@ -20,6 +20,14 @@ class Employee:
 	def __str__(self):
 		return '{} - {}'.format(self.fullname(), self.email)
 
+	def __add__(self, other):
+		"""
+		This is not a good real case scenario of adding two Employees. Being defined just for the sake of demonstration.
+		:param other: Another employee
+		:return: The sum of salaries of current employee and the other employee
+		"""
+		return self.pay + other.pay
+
 	def fullname(self):
 		return '{} {}'.format(self.first, self.last)
 
@@ -75,7 +83,4 @@ class Manager(Employee):
 emp_1 = Employee('John', 'Lennon', 50000)
 emp_2 = Employee('Salil', 'Chowdhury', 60000)
 
-print(emp_1)
-
-print(repr(emp_1))
-print(str(emp_1))
+print(emp_1 + emp_2)
