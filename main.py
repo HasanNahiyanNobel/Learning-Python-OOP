@@ -71,14 +71,12 @@ dev_2 = Developer('Salil', 'Chowdhury', 60000, 'Java')
 
 mgr_1 = Manager('Satyajit', 'Ray', 90000, [dev_1])
 
-print(mgr_1.email)
-mgr_1.add_employee(dev_2)
-mgr_1.rmv_employee(dev_1)
-mgr_1.print_employees()
+print(isinstance(mgr_1, Employee))
+print(isinstance(mgr_1, Developer))
+print(isinstance(mgr_1, Manager))
 
-# print(dev_1.email)
-# print(dev_1.programming_lang)
+print()
 
-# print(dev_1.pay)
-# dev_1.apply_raise()
-# print(dev_1.pay)
+print(issubclass(Developer, Employee))
+print(issubclass(Manager, Employee))
+print(issubclass(Developer, Manager))
