@@ -1,6 +1,6 @@
 # Learning Log
 
-Learning from [this](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc) tutorial.
+Learning from [this](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc) tutorial of Corey Schafer.
 
 
 
@@ -25,3 +25,7 @@ Learning from [this](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKh
 1. To create a class method we need the `@classmethod` *decorator* just before the method. This method will take the class as its first argument. However, convention to write this is `cls`, not `class`—as the second one is already a keyword in python.
 1. Used class method as a setter.
 1. Used class method as alternative constructor.
+1. Schafer clears the mist:
+	- If a method uses `self` somewhere inside—it should be **regular method**.
+	- If it uses `cls` inside—should be a **class method**.
+	- If it uses neither of them—should be a **static method**.
