@@ -52,3 +52,4 @@ Learning from [this](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKh
 
 ## 6. Property Decorators: Getters, Setters and Deleters
 1. Learnt the use of `@property` decorator.
+1. Learnt the use of setter. A bit weird, and made sense a bit.

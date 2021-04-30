@@ -23,6 +23,12 @@ class Employee:
 	def fullname(self):
 		return '{} {}'.format(self.first, self.last)
 
+	@fullname.setter
+	def fullname(self, name):
+		first, last = name.split(' ')
+		self.first = first
+		self.last = last
+
 	@property
 	def email(self):
 		return '{}.{}@company.com'.format(self.first, self.last)
@@ -79,7 +85,7 @@ class Manager(Employee):
 emp_1 = Employee('John', 'Lennon', 50000)
 emp_2 = Employee('Salil', 'Chowdhury', 60000)
 
-emp_1.first = 'Ono'
+emp_1.fullname = 'George Harrison'
 
 print(emp_1.fullname)
 print(emp_1.email)
