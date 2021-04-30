@@ -3,7 +3,6 @@
 #
 
 class Employee:
-
 	num_of_employees = 0
 	raise_amount = 1.04
 
@@ -38,13 +37,48 @@ class Employee:
 
 
 class Developer(Employee):
-	pass
+	raise_amount = 1.10
+
+	def __init__(self, first, last, pay, programming_lang):
+		super().__init__(first, last, pay)
+		self.programming_lang = programming_lang
 
 
-dev_1 = Developer('John', 'Lennon', 50000)
-dev_2 = Developer('Salil', 'Chowdhury', 60000)
+class Manager(Employee):
 
-print(help(Developer))
+	def __init__(self, first, last, pay, employees=None):
+		super().__init__(first, last, pay)
+		if employees is None:
+			self.employees = []
+		else:
+			self.employees = employees
+
+	def add_employee(self, employee):
+		if employee not in self.employees:
+			self.employees.append(employee)
+
+	def rmv_employee(self, employee):
+		if employee in self.employees:
+			self.employees.remove(employee)
+
+	def print_employees(self):
+		for employee in self.employees:
+			print('⇾', employee.fullname())
+
+
+dev_1 = Developer('John', 'Lennon', 50000, 'Python')
+dev_2 = Developer('Salil', 'Chowdhury', 60000, 'Java')
+
+mgr_1 = Manager('Satyajit', 'Ray', 90000, [dev_1])
+
+print(mgr_1.email)
+mgr_1.add_employee(dev_2)
+mgr_1.rmv_employee(dev_1)
+mgr_1.print_employees()
 
 # print(dev_1.email)
-# print(dev_2.email)
+# print(dev_1.programming_lang)
+
+# print(dev_1.pay)
+# dev_1.apply_raise()
+# print(dev_1.pay)

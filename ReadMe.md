@@ -35,3 +35,5 @@ Learning from [this](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKh
 ## 4. Inheritance
 1. Created an inherited class using `pass`.
 1. Used `help` method to have a good overview of the inherited class. This method looks *really* helpful. :3
+1. Learnt how class variable having same name is looked up from the inherited class.
+1. Created a new subclass `Manager`.
